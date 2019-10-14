@@ -1,6 +1,7 @@
 FROM openjdk:8-alpine
 
 EXPOSE 8082
+EXPOSE 8084
 
 HEALTHCHECK --start-period=30s \
             CMD wget --server-response --output-document=/dev/null http://localhost:8082 || exit 1
